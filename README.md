@@ -1,6 +1,4 @@
 # CPP_kotitehtavat
 Kansio kotitehtävien palautukseen
 Kokeillaan oppiiko tätä käyttämään.
-eka kommentti: Ei taida?! verkosta
-
-Eipä.. Verkosta
+Tämä on versio 1. verkosta.
