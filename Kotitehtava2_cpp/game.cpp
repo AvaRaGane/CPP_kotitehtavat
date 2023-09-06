@@ -33,5 +33,10 @@ void Game::play()
     }
     numOfGuesses++;
     cout << "Se meni oikein!"<< endl;//kun arvaus osui oikeaksi, poistutaan silmukasta, tulostellaan lopputekstit,
+    printGameResult();
+}
+
+void Game::printGameResult()
+{
     cout << "Kaytit arvauksia yhteensa "<< numOfGuesses << " kappaletta."<<endl;//arvauksien määrä ja
 }
