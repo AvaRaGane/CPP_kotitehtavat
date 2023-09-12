@@ -7,10 +7,11 @@ using namespace std;
 class Chef
 {
 public:
-    Chef(string);
-    ~Chef();
+    Chef(string a);
+    virtual ~Chef();
     void makeSalad();
     void makeSoup();
+    virtual string getName();
 protected:
     string name;
 };

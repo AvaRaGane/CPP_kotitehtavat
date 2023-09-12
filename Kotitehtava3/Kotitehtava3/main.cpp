@@ -8,10 +8,9 @@ int main()
 {
     cout << "Hello World!" << endl;
     Chef ramsey("Chef Gordon Ramsay");
+    ItalianChef antti("Chef Anthony Bourdain", 250, 100);
     ramsey.makeSalad();
+    antti.makePasta(250, 100);
     ramsey.makeSoup();
-    ItalianChef antti("Chef Anthony Bourdain");
-    antti.makeSoup();
-    antti.makePasta();
     return 0;
 }

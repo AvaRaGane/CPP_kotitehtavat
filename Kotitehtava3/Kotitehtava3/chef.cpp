@@ -20,3 +20,8 @@ void Chef::makeSoup()
 {
     cout<< name << " makes soup"<<endl;
 }
+
+string Chef::getName()
+{
+   return name;
+}

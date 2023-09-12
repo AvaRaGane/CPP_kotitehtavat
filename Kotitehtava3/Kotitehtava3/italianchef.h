@@ -8,10 +8,12 @@ using namespace std;
 class ItalianChef:public Chef
 {
 public:
-    ItalianChef(string);
+    ItalianChef(string a, int, int);
     ~ItalianChef();
-    string getName();
-    void makePasta();
+    string getName() override;
+    void makePasta(int, int);
+private:
+    int vesi, jauhot;
 };
 
 #endif // ITALIANCHEF_H
