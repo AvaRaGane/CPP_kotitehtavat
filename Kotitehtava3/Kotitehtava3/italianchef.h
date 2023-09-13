@@ -9,7 +9,7 @@ class ItalianChef:public Chef
 {
 public:
     ItalianChef(string a, int, int);
-    ~ItalianChef();
+    virtual ~ItalianChef();
     string getName() override;
     void makePasta(int, int);
 private:
