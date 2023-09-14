@@ -11,7 +11,6 @@ public:
     virtual ~Chef();
     void makeSalad();
     void makeSoup();
-    virtual string getName();
 protected:
     string name;
 };

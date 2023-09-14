@@ -9,8 +9,8 @@ class ItalianChef:public Chef
 {
 public:
     ItalianChef(string a, int, int);
-    virtual ~ItalianChef();
-    string getName() override;
+    ~ItalianChef();
+    string getName();
     void makePasta(int, int);
 private:
     int vesi, jauhot;
