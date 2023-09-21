@@ -6,10 +6,10 @@ using namespace std;
 
 int main()
 {
-    Chef ramsey("Chef Gordon Ramsay");
+    //Chef ramsey("Chef Gordon Ramsay");
     ItalianChef Mario("Chef Mario di Tottarelli", 250, 100);
-    ramsey.makeSalad();
+    //ramsey.makeSalad();
     Mario.makePasta(250, 100);
-    ramsey.makeSoup();
+    //ramsey.makeSoup();
     return 0;
 }
