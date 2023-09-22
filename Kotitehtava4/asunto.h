@@ -8,9 +8,8 @@ class Asunto
 public:
     Asunto();
     void Maarita(int a, int b);
-    double LaskeKulutus(double c);
+    double LaskeKulutus(double);
 
-private:
     int asukasMaara;
     int neliot;
 };

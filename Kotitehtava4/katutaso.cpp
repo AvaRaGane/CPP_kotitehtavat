@@ -13,13 +13,14 @@ void Katutaso::MaaritaAsunnot()
     as1.Maarita(2, 100);
     as2.Maarita(2, 100);
     cout << "Maaritetty!" << endl;
-    LaskeKulutus(2*200);
+    cout << "Maaritetaan Kerrokselta perityt asunnot!" << endl;
     Kerros::MaaritaAsunnot();
 }
 
-double Katutaso::LaskeKulutus(double c)
+double Katutaso::LaskeKulutus(double h)
 {
-    double hinta = 1.0;
-    cout << "Katutason kulutus, kun hinta = " << hinta << " on " << hinta * c << endl;
-    return 0;
+    double Kulutus = h * ((as1.LaskeKulutus(h)) +
+                          (as2.LaskeKulutus(h)) +
+                          Kerros::LaskeKulutus(h));
+    return Kulutus;
 }

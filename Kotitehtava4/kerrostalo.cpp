@@ -7,7 +7,6 @@ Kerrostalo::Kerrostalo()
     eka.MaaritaAsunnot();
     toka.MaaritaAsunnot();
     kolmas.MaaritaAsunnot();
-    LaskeKulutus(1);
 }
 
 Kerrostalo::~Kerrostalo()
@@ -17,7 +16,12 @@ Kerrostalo::~Kerrostalo()
 
 
 
-double Kerrostalo::LaskeKulutus(double c)
+double Kerrostalo::LaskeKulutus(double h)
 {
-    cout<<"Kerrostalon kokonaiskulutus on " << endl;
+    double ekanKulutus = eka.LaskeKulutus(h);
+    double tokanKulutus = toka.LaskeKulutus(h);
+    double kolmannenKulutus = kolmas.LaskeKulutus(h);
+
+    double kokonaisKulutus = ekanKulutus + tokanKulutus + kolmannenKulutus;
+    return kokonaisKulutus;
 }

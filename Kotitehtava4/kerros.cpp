@@ -15,9 +15,13 @@ void Kerros::MaaritaAsunnot()
     cout << "Maaritetty!" << endl;
 }
 
-double Kerros::LaskeKulutus(double c)
+double Kerros::LaskeKulutus(double h)
 {
-    double hinta = 1.0;
-    cout << "Kerroksen kulutus, kun hinta = " << hinta << " on " << hinta * c << endl;
-    return 200;
+    double Kulutus = h * ((as1.LaskeKulutus(h)) +
+                          (as2.LaskeKulutus(h)) +
+                          (as3.LaskeKulutus(h)) +
+                          (as4.LaskeKulutus(h)));
+
+
+     return Kulutus;
 }

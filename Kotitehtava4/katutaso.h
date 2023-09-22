@@ -9,7 +9,7 @@ public:
     Asunto as2;
     Katutaso();
     void MaaritaAsunnot() override;
-    double LaskeKulutus(double c) override;
+    double LaskeKulutus(double) override;
 };
 
 #endif // KATUTASO_H

@@ -9,7 +9,7 @@ class Kerrostalo
 public:
     Kerrostalo();
     ~Kerrostalo();
-    double LaskeKulutus(double c);
+    double LaskeKulutus(double);
 private:
     Katutaso eka;
     Kerros toka;

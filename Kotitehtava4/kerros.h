@@ -11,7 +11,7 @@ public:
     Asunto as4;
     Kerros();
     virtual void MaaritaAsunnot();
-    virtual double LaskeKulutus(double c);
+    virtual double LaskeKulutus(double);
 };
 
 #endif // KERROS_H
