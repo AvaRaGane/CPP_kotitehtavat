@@ -10,7 +10,9 @@ MyDeviceUI::MyDeviceUI()
 
 MyDeviceUI::~MyDeviceUI()
 {
-
+    delete objectDeviceDisplay;
+    delete objectDeviceMouse;
+    delete objectDeviceTouchPad;
 }
 
 void MyDeviceUI::uiShowMenu()
