@@ -14,7 +14,10 @@ int main()
     //Eka.laskeKulutus(1);
     //Kerros Eka;
     //Eka.maaritaAsunnot();
-    Kerrostalo Eka;
-    cout<<"Hinnan ollessa 1, on kerroksen kulutus "<<Eka.laskeKulutus(1)<<endl;
+    //Kerrostalo Eka;
+    Kerrostalo* Eka = new Kerrostalo;
+    //cout<<"Hinnan ollessa 1, on kerroksen kulutus "<<Eka.laskeKulutus(1)<<endl;
+    cout<<"Hinnan ollessa 1, on kerroksen kulutus "<<Eka->laskeKulutus(1)<<endl;
+    delete Eka;
     return 0;
 }

@@ -9,6 +9,13 @@ Katutaso::Katutaso()
     cout<<"Katutaso luotu"<<endl;
 }
 
+Katutaso::~Katutaso()
+{
+    delete as1;
+    delete as2;
+    cout<<"Katutaso tuhottu"<<endl;
+}
+
 void Katutaso::maaritaAsunnot()
 {
     cout<<"Maaritetaan katutason asunnot"<<endl;

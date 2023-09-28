@@ -17,6 +17,14 @@ Kerrostalo::Kerrostalo()
     kolmas->maaritaAsunnot();
 }
 
+Kerrostalo::~Kerrostalo()
+{
+    delete eka;
+    delete toka;
+    delete kolmas;
+    cout<<"Kerrostalo tuhottu!"<<endl;
+}
+
 double Kerrostalo::laskeKulutus(double h)
 {
     return eka->laskeKulutus(h)+toka->laskeKulutus(h)+kolmas->laskeKulutus(h);

@@ -8,6 +8,7 @@ class Kerrostalo
 {
 public:
     Kerrostalo();
+    ~Kerrostalo();
     double laskeKulutus(double);
 private:
     Katutaso *eka;
